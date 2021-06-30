@@ -1,9 +1,16 @@
+### macOS ###
+# General
+.DS_Store
+
+
+### react ###
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
+bower_components
 
 # testing
 /coverage
@@ -12,7 +19,6 @@
 /build
 
 # misc
-.DS_Store
 .env.local
 .env.development.local
 .env.test.local
@@ -21,3 +27,14 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+*.sublime*
+
+psd
+thumb
+sketch
