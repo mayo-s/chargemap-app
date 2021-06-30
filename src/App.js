@@ -1,9 +1,12 @@
 import './App.css';
+import Navbar from './components/layout/Navbar';
+import ChargeMap from './components/map/ChargeMap';
 
 function App() {
   return (
     <div className="App">
-      <h1>Charge Map</h1>
+      <Navbar />
+      <ChargeMap />
     </div>
   );
 }
