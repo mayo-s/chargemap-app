@@ -11,19 +11,15 @@ var popUpIcon = L.icon({
 
 class ChargeMap extends Component {
 
-  state = {
-    position: [52.5208, 13.4094]
-  };
-
   render() {
-
+    const currentPosition = this.props.currentPosition;
     return (
-      <MapContainer className="leaflet-container" center={this.state.position} zoom={10} scrollWheelZoom={true}>
+      <MapContainer className="leaflet-container" center={currentPosition} zoom={10} scrollWheelZoom={true}>
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={this.state.position} icon={popUpIcon}>
+        <Marker position={currentPosition} icon={popUpIcon}>
           <Popup>
             Popup with additional details.
           </Popup>
