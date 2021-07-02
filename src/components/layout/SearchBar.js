@@ -42,7 +42,7 @@ class SearchBar extends Component {
 
     return (
       <div className="wrapper grey darken-2">
-        <div className="row">
+        <div className="row clear-0">
           <div className="col s6 m3">
             <div className="input-field">
               <label htmlFor="distance">Distance in Km</label>
